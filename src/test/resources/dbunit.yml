@@ -1,0 +1,23 @@
+cacheConnection: true
+cacheTableNames: true
+leakHunter: false
+mergeDataSets: false
+mergingStrategy: CLASS
+caseInsensitiveStrategy: UPPERCASE
+raiseExceptionOnCleanUp: true
+expectedDbType: UNKNOWN
+disableSequenceFiltering: false
+disablePKCheckFor: []
+properties:
+  batchedStatements: false
+  qualifiedTableNames: true
+  caseSensitiveTableNames: false
+  batchSize: 100
+  fetchSize: 100
+  allowEmptyFields: false
+  escapePattern:
+  tableType: ["TABLE"]
+  schema: gameland
+connectionConfig:
+  driver: "org.h2.Driver"
+  url: "jdbc:h2:mem:arquillian;DB_CLOSE_DELAY=-1"
